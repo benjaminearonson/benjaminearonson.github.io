@@ -1,1 +1,9 @@
+body {
+  background-color: "#fff2cc";
+}
 
+h1 {
+  color: black;
+  margin-left: 20px;
+  font: "open sans";
+}
