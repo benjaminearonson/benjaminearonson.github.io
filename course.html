@@ -10,6 +10,21 @@
     
   </nav>
 
-  <img src="trading platform.png" alt="An article about a supposed wealth loophole Jeopardy host Ken Jennings has recommended" style="width:400px;height:225px;">
+  <img src="trading platform.png" alt="An article about a supposed wealth loophole Jeopardy host Ken Jennings has recommended" style="width:400px;height:225px;" id="tp">
+</button title="Enter fullscreen" onclick="openFullscreen();">
+
+  <script>
+    var elem = document.getElementById("tp");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      }
+    }
+    
+  </script>
   
 </html>
