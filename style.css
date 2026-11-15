@@ -18,9 +18,9 @@ h1, h2, h3 {
 
 nav {
   
-  padding: 0.5rem 5%;
+  padding: 0.1rem 5%;
   background: rgba(255, 255, 255, 1);
-
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,4 +53,14 @@ gap: 1rem;}
   background: #020066;
   color: white;
   text-shadow: 0 0 10px #020066;
+}
+
+.intro {
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 50px;
+  font-size: 2rem;
 }
