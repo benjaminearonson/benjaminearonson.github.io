@@ -31,7 +31,7 @@ nav {
 
 /* The text on the left of the navbar that reads "Mike&Co..." */
 .logo {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: black;
   letter-spacing: 0.5px;
@@ -47,8 +47,8 @@ gap: 1rem;}
   border: 2px solid #555;
   border-radius: 6px;
   position: relative;
-  font-size: 1.05rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 800;
   text-decoration: none;
   color: black;
 }
@@ -62,20 +62,20 @@ gap: 1rem;}
 .intro {
   display: grid;
   grid-template-columns: 50% 50%;
-  align-items: center;
+  align-items: start;
   margin-top: 60px;
   margin-left: 100px;
   margin-right: 100px; 
   border: 2px solid black; 
   border-radius: 20px;
   padding-left: 50px;
-  padding-top: 10px;
+  background-color: white;
   padding-bottom: 10px;
   font-size: 2rem;
 }
 
 .intro-text {
-  
+
   padding: 10px;
   line-height: 3rem;
   align-items: left;
@@ -87,7 +87,7 @@ gap: 1rem;}
   width: 75%;
   height: auto;
   margin-left: 100px;
-  margin-right: 0px;
+  margin-top: 15px;
   border-radius: 30px;
   border-color: rgba(255 , 255, 255, 0);
   padding: 10px;
@@ -95,14 +95,16 @@ gap: 1rem;}
 }
 
 .button-1 {
-  margin-top: 40px;
+  margin-top: 15px;
   margin-bottom: 10px;
-  align-items: center;
-  display: block;
-  padding: 0.4rem 1rem;
-  border: 2px solid #555;
+  display: inline-block;
+  padding-left: 1.5rem ;
+  padding-right: 1.5rem ;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 3px solid #555;
   border-radius: 12px;
-
+  font-size: 3rem;
   font-weight: 1000;
   text-decoration: none;
   color: black;
