@@ -153,6 +153,8 @@ gap: 1rem;}
 }
 
 .option-text {
+  display: grid;
+  grid-template-columns: 66% 33%;
   background-color: white;
   border: 2px solid black;
   border-radius: 20px;
@@ -160,4 +162,10 @@ gap: 1rem;}
   padding: 10px;
   padding-left: 20px;
   margin-left: 20px;
+}
+
+.option-text img {
+  width: 100%;
+  height: auto;
+  align-items: right;
 }
