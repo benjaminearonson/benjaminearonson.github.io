@@ -5,9 +5,6 @@ body {
   background-color: #fff2cc;
 }
 
-html {
-  transform: scale(0.8);
-}
 
 
 body {
@@ -321,5 +318,14 @@ gap: 1rem;}
 }
 
 .previous-button:hover .arrow-default {
+  filter: invert(1);
+}
+
+.next-button:hover {
+  background-color: #020066;
+  color: white;
+}
+
+.next-button:hover .arrow-default {
   filter: invert(1);
 }
