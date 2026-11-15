@@ -142,7 +142,7 @@ gap: 1rem;}
   grid-template-columns: 33% 33% 33%;
   align-items: start;
   margin-top: 40px;
-  margin-left: 100px;
+  margin-left: 80px;
   margin-right: 100px; 
   
   border-radius: 20px;
@@ -154,7 +154,7 @@ gap: 1rem;}
 
 .option-text {
   display: grid;
-  grid-template-columns: 66% 33%;
+  grid-template-columns: 57% 33%;
   background-color: white;
   border: 2px solid black;
   border-radius: 20px;
@@ -165,7 +165,9 @@ gap: 1rem;}
 }
 
 .option-text img {
-  width: 100%;
+  width: 120%;
   height: auto;
   align-items: right;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
