@@ -145,6 +145,22 @@ gap: 1rem;}
   color: black;
   
 }
+.button-4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  padding-left: 1.5rem ;
+  padding-right: 0.5rem ;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 3px solid #555;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 1000;
+  text-decoration: none;
+  color: black;
+}
+
 .button-1:hover {
   color: white;
   background-color: #020066;
@@ -155,6 +171,10 @@ gap: 1rem;}
   background-color: #020066;
 }
 .button-3:hover {
+  color: white;
+  background-color: #020066;
+}
+.button-4:hover {
   color: white;
   background-color: #020066;
 }
@@ -207,4 +227,25 @@ gap: 1rem;}
   background-color: white;
   padding-bottom: 10px;
   font-size: 2rem;
+}
+
+.lesson-layout {
+  display: grid;
+  align-items: start;
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-right: 0px;
+  grid-template-columns: 45% 5% 45%
+}
+
+.lesson-box {
+  align-items: start;
+  display:grid;
+  grid-template-columns: 67% 30%;
+  border: 2px solid black;
+  padding-left: 20px;
+  margin-bottom: -50px;
+  margin-right: 40px;
+  border-radius: 20px;
+  background-color: white;
 }
