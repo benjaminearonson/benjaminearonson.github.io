@@ -60,6 +60,8 @@ gap: 1rem;}
 }
 
 .intro {
+  display: grid;
+  grid-template-columns: 50% 50%;
   margin-top: 60px;
   margin-left: 50px;
   margin-right: 50px;
@@ -67,4 +69,18 @@ gap: 1rem;}
   border-radius: 20px;
   padding: 50px;
   font-size: 2rem;
+}
+
+.intro-text {
+  padding: 10px;
+  line-height: 3rem;
+  align-items: left;
+}
+
+/* the image in the intro box */
+.intro-image img {
+  scale: 0.5;
+  border-radius: 30px;
+  padding: 10px;
+  align-items: right;
 }
