@@ -13,7 +13,8 @@ body {
 
 h1, h2, h3 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 700
+  font-weight: 700;
+  
 }
 
 /* The navigation bar */
@@ -191,4 +192,19 @@ gap: 1rem;}
   align-items: right;
   padding-top: 20px;
   padding-bottom: 15px;
+}
+
+.course-intro {
+  display: grid;
+  
+  align-items: start;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px; 
+  border: 2px solid black; 
+  border-radius: 20px;
+  padding-left: 50px;
+  background-color: white;
+  padding-bottom: 10px;
+  font-size: 2rem;
 }
