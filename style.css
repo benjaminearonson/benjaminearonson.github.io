@@ -93,3 +93,24 @@ gap: 1rem;}
   padding: 10px;
   align-items: right;
 }
+
+.button-1 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  align-items: center;
+  display: block;
+  padding: 0.4rem 1rem;
+  border: 2px solid #555;
+  border-radius: 12px;
+
+  font-weight: 1000;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.button-1:hover {
+  color: white;
+  background-color: #020066;
+
+}
