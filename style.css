@@ -62,16 +62,20 @@ gap: 1rem;}
 .intro {
   display: grid;
   grid-template-columns: 50% 50%;
+  align-items: center;
   margin-top: 60px;
-  margin-left: 50px;
-  margin-right: 50px;
-  border: 2px solid black;
+  margin-left: 100px;
+  margin-right: 100px; 
+  border: 2px solid black; 
   border-radius: 20px;
-  padding: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 2rem;
 }
 
 .intro-text {
+  
   padding: 10px;
   line-height: 3rem;
   align-items: left;
@@ -79,8 +83,13 @@ gap: 1rem;}
 
 /* the image in the intro box */
 .intro-image img {
-  scale: 0.5;
+  
+  width: 75%;
+  height: auto;
+  margin-left: 100px;
+  margin-right: 0px;
   border-radius: 30px;
+  border-color: rgba(255 , 255, 255, 0);
   padding: 10px;
   align-items: right;
 }
