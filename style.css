@@ -252,23 +252,55 @@ gap: 1rem;}
 
 .progress-bar {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  width: 86.5%;
+  margin-left:120px;
 }
 
 .rectangle {
-  width: 300px;
   height: 15px;
   border: 2px solid black;
   color: #020066;
-  margin-right: 0px;
+  margin-right:15px;
 }
 
 .lesson-text {
-  margin-left: 50px;
+  margin-left: 120px;
   margin-right: 150px;
   margin-top: 20px;
   font-size: 25px;
   line-height: 35px;
   border: solid black 2px;
   border-radius: 20px;
+}
+
+.previous-button {
+  display: inline-flex;
+  margin-top: 20px;
+  margin-left: 120px;
+  border: solid black 2px;
+  width: fit-content;
+  padding-left: 0px;
+  padding-right: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.previous-button:hover {
+  background-color: #020066;
+  color: white;
+}
+
+.arrow-hover {
+  display:none;
+}
+
+.previous-button:hover .arrow-default {
+  display: none;
+}
+.previous-button:hover .arrow-hover {
+  filter: invert(1);
 }
