@@ -132,18 +132,31 @@ gap: 1rem;}
   background-color: #020066;
 
 }
+.button-2:hover {
+  color: white;
+  background-color: #020066;
+}
 
 .options {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   align-items: start;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-left: 100px;
   margin-right: 100px; 
-  border: 2px solid black; 
+  
   border-radius: 20px;
   padding-left: 50px;
-  background-color: white;
+
   padding-bottom: 10px;
   font-size: 1rem;
+}
+
+.option-text {
+  
+  border: 2px solid black;
+  border-radius: 20px;
+  align-items: start;
+  padding: 20px;
+  margin-left: 20px;
 }
