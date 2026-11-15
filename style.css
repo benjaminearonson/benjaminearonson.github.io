@@ -262,3 +262,13 @@ gap: 1rem;}
   color: #020066;
   margin-right: 0px;
 }
+
+.lesson-text {
+  margin-left: 50px;
+  margin-right: 150px;
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 35px;
+  border: solid black 2px;
+  border-radius: 20px;
+}
