@@ -397,4 +397,6 @@ img:fullscreen {
   color: white;
   border: solid black 2px;
   border-radius: 20px;
+  margin-left: 100px;
+  padding: 20px;
 }
