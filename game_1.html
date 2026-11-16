@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html data-init="no-js">
 <head>
-
-
-
-
-
 <meta charset="UTF-8" />
 <title>Game_Phishing_Draft2</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -104,13 +99,12 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 <style id="style-ui-debug-views" type="text/css">html[data-debug-view] .debug{padding:.25em;background-color:#234}html[data-debug-view] .debug[title]{cursor:help}html[data-debug-view] .debug.block{display:inline-block;vertical-align:middle}html[data-debug-view] .debug.invalid{text-decoration:line-through}html[data-debug-view] .debug.hidden,html[data-debug-view] .debug.hidden .debug{background-color:#555}html:not([data-debug-view]) .debug.hidden{display:none}html[data-debug-view] .debug[data-name][data-type].nonvoid::after,html[data-debug-view] .debug[data-name][data-type]::before{background-color:rgba(0,0,0,.25);font-family:monospace,monospace;white-space:pre}html[data-debug-view] .debug[data-name][data-type]::before{content:attr(data-name)}html[data-debug-view] .debug[data-name][data-type|=macro]::before{content:"<<" attr(data-name) ">>"}html[data-debug-view] .debug[data-name][data-type|=macro].nonvoid::after{content:"<</" attr(data-name) ">>"}html[data-debug-view] .debug[data-name][data-type|=html]::before{content:"<" attr(data-name) ">"}html[data-debug-view] .debug[data-name][data-type|=html].nonvoid::after{content:"</" attr(data-name) ">"}html[data-debug-view] .debug[data-name][data-type]:not(:empty)::before{margin-right:.25em}html[data-debug-view] .debug[data-name][data-type].nonvoid:not(:empty)::after{margin-left:.25em}html[data-debug-view] .debug[data-name][data-type|=special],html[data-debug-view] .debug[data-name][data-type|=special]::before{display:block}</style>
 </head>
 <body>
-
 	<div id="init-screen">
 		<div id="init-no-js"><noscript>JavaScript must be enabled to play.</noscript></div>
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Game_Phishing_Draft2" startnode="12" creator="Twine" creator-version="2.12.1" format="SugarCube" format-version="2.37.3" ifid="C41F7D08-92AB-4E36-B5D1-0A6E3F8C2B57" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+	<tw-storydata name="Game_Phishing_Draft2" startnode="16" creator="Twine" creator-version="2.12.1" format="SugarCube" format-version="2.37.3" ifid="C41F7D08-92AB-4E36-B5D1-0A6E3F8C2B57" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
 background: #111111;
 margin: 0;
 min-height: 100vh;
@@ -121,7 +115,7 @@ align-items: center;
 #story {
 position: static;
 box-sizing: border-box;
-width: 390px;
+width: 750px;
 max-width: 90vw;
 height: 780px;
 max-height: 90vh;
@@ -400,16 +394,9 @@ Got all that? Click here to [[Return to title screen|Start]]
 &lt;div class=&quot;inbox-title&quot;&gt;You got _score out of _total correct!&lt;/div&gt;
 
 &lt;&lt;link &quot;Try again&quot; &quot;Inbox&quot;&gt;&gt;&lt;&lt;set $trash to []&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;Go back to menu&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set $trash to []&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Start" tags="" position="700,275" size="100,100">Hello! You must be $name! And welcome to...ETWIP: Phishing Edition! In this game, your email inbox is full of messages, and some of them are trying to trick you. Click below to start the game, or learn how to play!
-&lt;&lt;if visited(&#39;Instructions&#39;) gte 1 and visited(&#39;Instructions&#39;) lt 2&gt;&gt;
-Hey, Welcome back! How were the instructions?
-&lt;&lt;elseif visited(&#39;Instructions&#39;) gte 2&gt;&gt;
-You checked the instructions again? What did you miss the first time?
-&lt;&lt;else&gt;&gt;
+&lt;&lt;link &quot;Go back to menu&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set $trash to []&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Start" tags="" position="700,275" size="100,100">Welcome to Fishing for Phishing! In this game, your email inbox is full of messages, and some of them are trying to trick you. Select the checkbox next to each email you think could be a scam, but don&#39;t check the ones you think are legitimate, and then click &quot;Empty trash&quot; to see your score.
 
-&lt;&lt;/if&gt;&gt;
-[[Start ETWIP|Inbox]]
-[[How do I Play?|Instructions]]</tw-passagedata><tw-passagedata pid="17" name="StoryInit" tags="" position="825,275" size="100,100">&lt;&lt;set setup.emails to [
+[[Start ETWIP|Inbox]]</tw-passagedata><tw-passagedata pid="17" name="StoryInit" tags="" position="825,275" size="100,100">&lt;&lt;set setup.emails to [
   {
     from: &quot;Bank of Northfield&quot;,
     address: &quot;security@northfeild-bank-alerts.com&quot;,
