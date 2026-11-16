@@ -392,3 +392,9 @@ img:fullscreen {
   color: white;
   background-color: #020066;
 }
+
+.resources-box {
+  color: white;
+  border: solid black 2px;
+  border-radius: 20px;
+}
