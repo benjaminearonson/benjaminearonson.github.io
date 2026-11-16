@@ -267,10 +267,7 @@ gap: 1rem;}
   color: #020066;
   margin-right:15px;
 }
-
 .lesson-text {
-  display: grid;
-  grid-template-columns: 37% 50%;
   margin-left: 120px;
   margin-right: 150px;
   margin-top: 20px;
@@ -279,6 +276,21 @@ gap: 1rem;}
   border: solid black 2px;
   border-radius: 20px;
   background-color: white;
+}
+
+.lesson-text-2 {
+  display: grid;
+  grid-template-columns: 37% 60%;
+  margin-left: 120px;
+  margin-right: 150px;
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 35px;
+  border: solid black 2px;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 22px;
+  line-height: 32px;
 }
 
 .previous-button {
@@ -331,4 +343,32 @@ gap: 1rem;}
 
 .next-button:hover .arrow-default {
   filter: invert(1);
+}
+
+.remember {
+  border: solid black 2px;
+  padding: 10px;
+  padding-left: 35px;
+  align-content: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #fff2cc;
+}
+
+img:fullscreen {
+  object-fit: contain;
+  background-color: black;
+}
+
+.lesson-image {
+  width: 550px;
+  border: solid black 2px;
+  border-radius: 10px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.lesson-image:hover {
+  transform:scale(1.05);
 }
