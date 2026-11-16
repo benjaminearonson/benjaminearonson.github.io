@@ -441,3 +441,26 @@ img:fullscreen {
 .proceed-button:hover .arrow-default {
   filter: invert(1);
 }
+
+.return-button {
+  display: inline-flex;
+  margin-top: -250px;
+  margin-left: 120px;
+  border: solid black 2px;
+  width: fit-content;
+  padding-left: 0px;
+  padding-right: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.return-button:hover {
+  background-color: #020066;
+  color: white;
+}
+
+.return-button:hover .arrow-default {
+  filter: invert(1);
+}
