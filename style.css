@@ -418,3 +418,26 @@ img:fullscreen {
   padding: 20px;
   background-color: white;
 }
+
+.proceed-button {
+  display: inline-flex;
+  margin-top: -20px;
+  margin-left: 75%;
+  border: solid black 2px;
+  width: fit-content;
+  padding-left: 0px;
+  padding-right: 63px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.proceed-button:hover {
+  background-color: #020066;
+  color: white;
+}
+
+.proceed-button:hover .arrow-default {
+  filter: invert(1);
+}
