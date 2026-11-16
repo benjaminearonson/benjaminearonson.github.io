@@ -401,3 +401,10 @@ img:fullscreen {
   padding: 20px;
   background-color: white;
 }
+
+.game-iframe {
+ display: block;
+  width: 90%;
+  height: 80vh;
+  margin: 100px;
+}
