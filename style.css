@@ -269,6 +269,8 @@ gap: 1rem;}
 }
 
 .lesson-text {
+  display: grid;
+  grid-template-columns: 37% 50%;
   margin-left: 120px;
   margin-right: 150px;
   margin-top: 20px;
@@ -276,6 +278,7 @@ gap: 1rem;}
   line-height: 35px;
   border: solid black 2px;
   border-radius: 20px;
+  background-color: white;
 }
 
 .previous-button {
