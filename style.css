@@ -113,16 +113,16 @@ gap: 1rem;}
 }
 
 .button-2 {
-  margin-top: 0px;
-  margin-bottom: 10px;
   display: inline-block;
-  padding-left: 1.5rem ;
-  padding-right: 1.5rem ;
+  margin-top: 0.5rem;
+  margin-bottom: 10px;
+  padding: clamp(0.5rem, 1vw, 0.75rem)
+    clamp(0.75rem, 1.5vw, 1.25rem);
   padding-top: 1rem;
   padding-bottom: 1rem;
   border: 3px solid #555;
   border-radius: 12px;
-  font-size: 1.5rem;
+  font-size: clamp(0.95rem, 1.3vw, 1.25rem);
   font-weight: 1000;
   text-decoration: none;
   color: black;
