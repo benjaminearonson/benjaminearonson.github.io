@@ -528,3 +528,24 @@ img:fullscreen {
 .take-course {
   grid-area: "box-1";
 }
+
+.footer {
+  margin-top: 2.5rem;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0.8);
+}
+
+.footer a {
+  font-size: 1.3rem;
+  margin: 2rem 0rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
