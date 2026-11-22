@@ -351,6 +351,7 @@ gap: 1rem;}
 .progress-bar,
 .lesson-text,
 .lesson-text-2,
+.game-iframe,
 .previous-next-buttons {
   width: min(1400px, 92%);
   margin-left: auto;
@@ -431,10 +432,8 @@ img:fullscreen {
 }
 
 .game-iframe {
- display: block;
-  width: 90%;
+  display: block;
   height: 80vh;
-  margin: 0px;
   border: none;
 }
 
