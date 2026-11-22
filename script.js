@@ -1,4 +1,4 @@
-const images = document.querySelectorAll('.lesson-image');
+const images = document.querySelectorAll('.lesson-image, .about-box img');
     images.forEach(image => {
         image.addEventListener('click', () => {
             // Check if the element is already fullscreen
