@@ -633,7 +633,36 @@ img:fullscreen {
   align-items: center;
   justify-content: center;
   display: flex;
+  gap:2rem;
   margin-top: 1rem;
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+.continue-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  border: solid black 2px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.continue-button img {
+  width: 40px;
+  height: auto;
+}
+
+.continue-button:hover {
+  background-color: #020066;
+  color: white;
+}
+
+.continue-button:hover img {
+  filter: invert(1);
 }
