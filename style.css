@@ -559,6 +559,9 @@ img:fullscreen {
   
 }
 
+/* this is what makes the clickable areas work */
+/* it has them transparent until clicked, which is recognized 
+by game2.js script and then it adds the .clicked class to the button */
 .level-1-complete .hotspot {
   position: absolute;
   display: block;
