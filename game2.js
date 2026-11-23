@@ -13,11 +13,12 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
     });
 });
 
-const image = document.querySelectorAll('.level-1 img');
+const image = document.querySelector('.aronson img');
+
 image.addEventListener('click', () => {
     misses++;
     misses_span.textContent= misses;
-})
+});
 
 if (red_flag_count==3) {
     
