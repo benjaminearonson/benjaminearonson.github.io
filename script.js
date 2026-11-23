@@ -14,8 +14,14 @@ const images = document.querySelectorAll('.lesson-image, .about-box img');
             }
     });});
 
+let red_flag_count = 0;
+let red_flag_span = document.getElementById("red-flag-counter");
+
 document.querySelectorAll('.hotspot').forEach((spot) => {
     spot.addEventListener('click', () => {
-        spot.classList.add('clicked');
+        if (!spot.classList.contains("clicked")) {
+            spot.classList.add('clicked');
+            spot.textContent=red_flag_count;
+        }
     });
 });
