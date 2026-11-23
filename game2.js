@@ -9,6 +9,9 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
             spot.classList.add('clicked');
             red_flag_count++;
             red_flag_span.textContent=red_flag_count;
+            if (red_flag_count==3) {
+                window.location.href = "game-2-level-1-complete.html";
+            }
         }
     });
 });
@@ -20,6 +23,3 @@ image.addEventListener('click', () => {
     misses_span.textContent= misses;
 });
 
-if (red_flag_count==3) {
-    
-}

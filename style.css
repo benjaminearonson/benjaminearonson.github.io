@@ -559,6 +559,27 @@ img:fullscreen {
   
 }
 
+.level-1-complete .hotspot {
+  position: absolute;
+  display: block;
+  background: transparent;
+  border: 4px solid #0ac630;
+  border-radius: 12px;
+  
+}
+.level-1-complete .aronson {
+  position: relative;
+  max-width: 60%;
+  margin: 2rem auto;
+  margin-bottom: 0.5rem;
+}
+
+.level-1-complete .aronson img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
 .level-1 .hotspot.clicked {
   border-color: #0ac630;
 }
@@ -577,10 +598,10 @@ img:fullscreen {
 }
 
 .invest-button-and-flag-counter {
-  display: grid;
+  display: flex;
+  gap: 4rem;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-top: none;
 }
 
@@ -596,4 +617,14 @@ img:fullscreen {
   cursor: pointer;
   background-color: #035514;
   color: white;
+}
+
+.red-flag-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: white;
 }
