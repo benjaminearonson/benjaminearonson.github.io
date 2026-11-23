@@ -567,6 +567,7 @@ img:fullscreen {
   position: relative;
   max-width: 60%;
   margin: 2rem auto;
+  margin-bottom: 0.5rem;
 }
 
 .level-1 .aronson img {
@@ -575,3 +576,24 @@ img:fullscreen {
   border-radius: 20px;
 }
 
+.invest-button-and-flag-counter {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: none;
+}
+
+.invest-button {
+  background-color: #0ac630;
+  padding: 0.5rem;
+  border: solid black 2px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.invest-button:hover {
+  cursor: pointer;
+  background-color: #035514;
+  color: white;
+}
