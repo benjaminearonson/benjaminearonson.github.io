@@ -13,3 +13,9 @@ const images = document.querySelectorAll('.lesson-image, .about-box img');
                 document.exitFullscreen();
             }
     });});
+
+document.querySelectorAll('.hotspot').forEach((spot) => {
+    spot.addEventListener('click', () => {
+        spot.classList.add('clicked');
+    });
+});

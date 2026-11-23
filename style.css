@@ -549,3 +549,29 @@ img:fullscreen {
 .footer a:hover {
   text-decoration: underline;
 }
+
+.level-1 .hotspot {
+  position: absolute;
+  display: block;
+  background: transparent;
+  border: 4px solid transparent;
+  border-radius: 12px;
+  
+}
+
+.level-1 .hotspot.clicked {
+  border-color: #0ac630;
+}
+
+.level-1 .aronson {
+  position: relative;
+  max-width: 60%;
+  margin: 2rem auto;
+}
+
+.level-1 .aronson img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
