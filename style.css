@@ -378,10 +378,12 @@ gap: 1rem;}
 
 .remember {
   border: solid black 2px;
-  padding: 10px;
+  display: flex;
+  padding: 1rem;
   padding-left: 35px;
   align-content: center;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin-bottom: 0.5rem;
   border-radius: 10px;
   font-size: 20px;
   background-color: #fff2cc;
