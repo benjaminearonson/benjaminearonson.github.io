@@ -21,7 +21,8 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
     spot.addEventListener('click', () => {
         if (!spot.classList.contains("clicked")) {
             spot.classList.add('clicked');
-            spot.textContent=red_flag_count;
+            red_flag_count++;
+            red_flag_span.textContent=red_flag_count;
         }
     });
 });
