@@ -628,3 +628,12 @@ img:fullscreen {
   padding: 0.5rem;
   background-color: white;
 }
+
+.level-complete-explanation {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
