@@ -1,9 +1,7 @@
-let red_flag_count = 0;
-let misses = 0;
+let red_flags_remaining = 3;
 
 // finds and assigns the spans to variable names to be used later
 let red_flag_span = document.getElementById("red-flag-counter");
-let misses_span = document.getElementById("misses-counter");
 
 // loops through every item with the class 'hotspot'
 // adds an event listener to listen for clicks
@@ -16,9 +14,9 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
     spot.addEventListener('click', () => {
         if (!spot.classList.contains("clicked")) {
             spot.classList.add('clicked');
-            red_flag_count++;
+            red_flags_remaining--;
             red_flag_span.textContent=red_flag_count;
-            if (red_flag_count==3) {
+            if (red_flag_count==0) {
                 window.location.href = "game-2-level-1-complete.html";
             }
         }
@@ -30,9 +28,6 @@ const image = document.querySelector('.aronson img');
 
 // .textContent in both blocks edits whats in the span that's assigned at the top 
 // of this file
-
-// a variable that stores how many lives the player has
-const life_counter = document.getElementById('life_counter');
 
 // set the value of 'lives' in sessionStorage so it can 
 // be updated and saved across pages of the same browser tab
