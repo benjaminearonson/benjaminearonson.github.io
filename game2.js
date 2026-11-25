@@ -46,6 +46,6 @@ if (!sessionStorage.lives) {
 image.addEventListener('click', () => {
     sessionStorage.setItem('lives', 
         sessionStorage.getItem('lives')-1);
-    console.log("you have "+ sessionStorage.getItem('lives') + " lives");
+    life_counter.textContent = String(sessionStorage.getItem('lives'));
 });
 
