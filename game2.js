@@ -44,6 +44,7 @@ image.addEventListener('click', () => {
     lives--;
     if (sessionStorage.lives) {
         sessionStorage.lives = Number(sessionStorage.lives)-1;
+        life_counter.textContent = sessionStorage.lives;
     }
     else {
         sessionStorage.lives = 3;
