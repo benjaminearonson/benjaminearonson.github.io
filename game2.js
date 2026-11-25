@@ -28,6 +28,12 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
 // sets variable 'image' to the image onscreen in level 1
 const image = document.querySelector('.aronson img');
 
+// .textContent in both blocks edits whats in the span that's assigned at the top 
+// of this file
+
+// a variable that stores how many lives the player has
+let lives = 3;
+
 // listens for clicks on the 'image' variable and incremenets the 'misses' counter
 // whenever the image is clicked, since it sits behind the hotspots
 
@@ -35,9 +41,3 @@ image.addEventListener('click', () => {
     misses++;
     misses_span.textContent= misses;
 });
-
-// .textContent in both blocks edits whats in the span that's assigned at the top 
-// of this file
-
-// a variable that stores how many lives the player has
-let lives = 3;
