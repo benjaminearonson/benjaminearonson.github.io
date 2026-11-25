@@ -39,8 +39,8 @@ const life_counter = document.getElementById('life_counter');
 // whenever the image is clicked, since it sits behind the hotspots
 
 image.addEventListener('click', () => {
-    misses++;
-    misses_span.textContent= misses;
+    //misses++;
+    //misses_span.textContent= misses;
     lives--;
     if (sessionStorage.lives) {
         sessionStorage.lives = Number(sessionStorage.lives)-1;
@@ -50,3 +50,5 @@ image.addEventListener('click', () => {
         sessionStorage.lives = 3;
     }
 });
+
+console.log(life_counter.textContent);
