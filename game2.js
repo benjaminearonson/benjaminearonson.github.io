@@ -34,15 +34,16 @@ const image = document.querySelector('.aronson img');
 // a variable that stores how many lives the player has
 const life_counter = document.getElementById('life_counter');
 
-sessionStorage.setItem('lives', 3);
+// set the value of 'lives' in sessionStorage so it can 
+// be updated and saved across pages of the same browser tab
+if (!sessionStorage.lives) { 
+    sessionStorage.setItem('lives', 3); }
 
 
-// listens for clicks on the 'image' variable and incremenets the 'misses' counter
-// whenever the image is clicked, since it sits behind the hotspots
-
+//listens for when the image is clicked, and when it is,
+// it updates the value of 'lives' in sessionStorage to decrease
+// by 1
 image.addEventListener('click', () => {
-    //misses++;
-    //misses_span.textContent= misses;
     sessionStorage.setItem('lives', 
         sessionStorage.getItem('lives')-1);
     console.log("you have "+ sessionStorage.getItem('lives') + " lives");
