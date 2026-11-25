@@ -671,3 +671,7 @@ by game2.js script and then it adds the .clicked class to the button */
 .continue-button:hover img {
   filter: invert(1);
 }
+
+.popup {
+  visibility: hidden;
+}
