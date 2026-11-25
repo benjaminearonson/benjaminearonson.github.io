@@ -43,13 +43,8 @@ sessionStorage.setItem('lives', 3);
 image.addEventListener('click', () => {
     //misses++;
     //misses_span.textContent= misses;
-    if (sessionStorage.lives) {
-        sessionStorage.lives = Number(sessionStorage.lives)-1;
-        life_counter.textContent = sessionStorage.lives;
-    }
-    else {
-        sessionStorage.lives = 3;
-    }
+    sessionStorage.setItem('lives', 
+        sessionStorage.getItem('lives')-1);
+    console.log("you have "+ sessionStorage.getItem('lives') + " lives");
 });
 
-console.log("you have "+ sessionStorage.getItem('lives') + " lives");
