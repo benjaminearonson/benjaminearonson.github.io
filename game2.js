@@ -38,3 +38,6 @@ image.addEventListener('click', () => {
 
 // .textContent in both blocks edits whats in the span that's assigned at the top 
 // of this file
+
+// a variable that stores how many lives the player has
+let lives = 3;
