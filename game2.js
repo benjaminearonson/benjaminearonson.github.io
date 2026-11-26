@@ -11,11 +11,6 @@ const image = document.querySelector('.aronson img');
 // .textContent in both blocks edits whats in the span that's assigned at the top 
 // of this file
 
-// set the value of 'lives' in sessionStorage so it can 
-// be updated and saved across pages of the same browser tab
-if (!sessionStorage.lives) { 
-    sessionStorage.setItem('lives', 3); }
-
 function showPopup() {
     const popup_div = document.getElementById('myPopup');
     popup_div.classList.remove('hide');
