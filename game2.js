@@ -41,8 +41,8 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
             if (!spot.classList.contains("clicked")) {
                 spot.classList.add('clicked');
                 red_flags_remaining--;
-                red_flag_span.textContent=red_flag_count;
-                if (red_flag_count==0) {
+                red_flag_span.textContent=red_flags_remaining;
+                if (red_flags_remaining==0) {
                     window.location.href = "game-2-level-1-complete.html";
                 }
             }
