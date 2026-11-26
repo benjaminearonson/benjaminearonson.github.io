@@ -5,6 +5,7 @@ let red_flag_span = document.getElementById("red-flag-counter");
 let life_counter = document.getElementById("life_counter");
 
 red_flag_span.textContent = red_flags_found;
+life_counter.textContent = sessionStorage.getItem('lives');
 
 // sets variable 'image' to the image onscreen in level 1
 const image = document.querySelector('.aronson img');
