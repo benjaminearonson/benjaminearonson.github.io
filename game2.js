@@ -35,8 +35,9 @@ if (!sessionStorage.lives) {
     sessionStorage.setItem('lives', 3); }
 
 function showPopup() {
-    const popup_div = document.querySelector('.popup');
+    const popup_div = document.getElementById('myPopup');
     popup_div.classList.remove('hide');
+    popup_div.classList.add('show');
     console.log(popup_div);
 }
 //listens for when the image is clicked, and when it is,

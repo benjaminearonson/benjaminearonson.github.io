@@ -679,3 +679,7 @@ by game2.js script and then it adds the .clicked class to the button */
 .popup {
   visibility: visible;
 }
+
+.popup .show {
+  visibility: visible;
+}
