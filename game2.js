@@ -37,6 +37,7 @@ if (!sessionStorage.lives) {
 function showPopup() {
     const popup_div = document.querySelector('.popup');
     popup_div.classList.add('show');
+    console.log(popup_div);
 }
 //listens for when the image is clicked, and when it is,
 // it updates the value of 'lives' in sessionStorage to decrease
@@ -45,7 +46,7 @@ image.addEventListener('click', () => {
     sessionStorage.setItem('lives', 
         sessionStorage.getItem('lives')-1);
     life_counter.textContent = String(sessionStorage.getItem('lives'));
-    if (lives == 0) {
+    if (sessionStorage.getItem('lives') == 0) {
         showPopup();
     }
 });
