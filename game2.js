@@ -3,25 +3,7 @@ let red_flags_remaining = 3;
 // finds and assigns the spans to variable names to be used later
 let red_flag_span = document.getElementById("red-flag-counter");
 
-// loops through every item with the class 'hotspot'
-// adds an event listener to listen for clicks
-// if the thing that gets clicked already has the class 'clicked', 
-// nothing happens. If it doesn't have that class, it gets added, 
-// and the red flag counter goes up.
-// when the red flag counter hits 3, it sends the user to level-1-complete page
 
-document.querySelectorAll('.hotspot').forEach((spot) => {
-    spot.addEventListener('click', () => {
-        if (!spot.classList.contains("clicked")) {
-            spot.classList.add('clicked');
-            red_flags_remaining--;
-            red_flag_span.textContent=red_flag_count;
-            if (red_flag_count==0) {
-                window.location.href = "game-2-level-1-complete.html";
-            }
-        }
-    });
-});
 
 // sets variable 'image' to the image onscreen in level 1
 const image = document.querySelector('.aronson img');
@@ -43,11 +25,32 @@ function showPopup() {
 // it updates the value of 'lives' in sessionStorage to decrease
 // by 1
 image.addEventListener('click', () => {
-    sessionStorage.setItem('lives', 
+    if (sessionStorage.getItem('lives')>0) {sessionStorage.setItem('lives', 
         sessionStorage.getItem('lives')-1);
-    life_counter.textContent = String(sessionStorage.getItem('lives'));
+    life_counter.textContent = String(sessionStorage.getItem('lives')); }
     if (sessionStorage.getItem('lives') == 0) {
         showPopup();
     }
 });
 
+// loops through every item with the class 'hotspot'
+// adds an event listener to listen for clicks
+// if the thing that gets clicked already has the class 'clicked', 
+// nothing happens. If it doesn't have that class, it gets added, 
+// and the red flag counter goes up.
+// when the red flag counter hits 3, it sends the user to level-1-complete page
+
+document.querySelectorAll('.hotspot').forEach((spot) => {
+    spot.addEventListener('click', () => {
+        if (sessionStorage.getItem('lives')>0) {
+            if (!spot.classList.contains("clicked")) {
+                spot.classList.add('clicked');
+                red_flags_remaining--;
+                red_flag_span.textContent=red_flag_count;
+                if (red_flag_count==0) {
+                    window.location.href = "game-2-level-1-complete.html";
+                }
+            }
+        }
+    });
+});
