@@ -1,9 +1,10 @@
-let red_flags_remaining = 3;
+let red_flags_found = 0;
 
 // finds and assigns the spans to variable names to be used later
 let red_flag_span = document.getElementById("red-flag-counter");
+let life_counter = document.getElementById("life_counter");
 
-
+red_flag_span.textContent = red_flags_found;
 
 // sets variable 'image' to the image onscreen in level 1
 const image = document.querySelector('.aronson img');
@@ -40,9 +41,9 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
         if (sessionStorage.getItem('lives')>0) {
             if (!spot.classList.contains("clicked")) {
                 spot.classList.add('clicked');
-                red_flags_remaining--;
-                red_flag_span.textContent=red_flags_remaining;
-                if (red_flags_remaining==0) {
+                red_flags_found++;
+                red_flag_span.textContent=red_flags_found;
+                if (red_flags_found==3) {
                     window.location.href = "game-2-level-1-complete.html";
                 }
             }
