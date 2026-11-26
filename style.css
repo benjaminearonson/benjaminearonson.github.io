@@ -672,10 +672,10 @@ by game2.js script and then it adds the .clicked class to the button */
   filter: invert(1);
 }
 
-.popup {
+.popup .hide {
   visibility: hidden;
 }
 
-.popup .show {
+.popup {
   visibility: visible;
 }

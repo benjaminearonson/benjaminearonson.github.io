@@ -36,7 +36,7 @@ if (!sessionStorage.lives) {
 
 function showPopup() {
     const popup_div = document.querySelector('.popup');
-    popup_div.classList.add('show');
+    popup_div.classList.remove('hide');
     console.log(popup_div);
 }
 //listens for when the image is clicked, and when it is,
