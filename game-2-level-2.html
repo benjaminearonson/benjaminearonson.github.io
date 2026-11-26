@@ -29,13 +29,21 @@
 <div class="level-1">
     <div class="aronson">
         <img src="ricigliano-investment.png" alt="An ad for Ricigliano Investment">
-        
+        <!-- here I'll put a popup with a class that makes it
+          invisible until a function gets triggered in game2.js
+          at which point a class will be added that makes it visible-->
+          <div class="popup">
+            <div class="hide" id="myPopup">
+              You've run out of lives!
+              <a href="game-2.html" class="restart-button">Start over</a>
+            </div>
+          </div>
     </div>
 </div>
 
 <div class="invest-button-and-flag-counter">
     <div></div>
-    <button class="invest-button" onclick="window.location.href='level-2-complete.html'"><b>Looks legit; Invest!</b></button>
+    <button class="invest-button" id="invest-button" onclick="window.location.href='level-2-complete.html'"><b>Invest!</b></button>
     <div class="red-flag-text">Red flags found: <span id="red-flag-counter">0</span></div>
     <div class="red-flag-text">Lives: <span id="life_counter">a</span></div>
     <div></div>

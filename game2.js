@@ -17,6 +17,7 @@ function showPopup() {
     const popup_div = document.getElementById('myPopup');
     popup_div.classList.remove('hide');
     popup_div.classList.add('show');
+    document.getElementById('invest-button').disabled = true;
 }
 //listens for when the image is clicked, and when it is,
 // it updates the value of 'lives' in sessionStorage to decrease

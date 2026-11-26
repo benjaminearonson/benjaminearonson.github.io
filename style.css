@@ -625,6 +625,12 @@ by game2.js script and then it adds the .clicked class to the button */
   border: solid black 2px;
   border-radius: 10px;
   font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.invest-button .unclickable {
+  pointer-events: none;
 }
 
 .invest-button:hover {
