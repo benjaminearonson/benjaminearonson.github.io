@@ -687,7 +687,7 @@ by game2.js script and then it adds the .clicked class to the button */
 
 .popup .show {
   visibility: visible;
-  width: 40%;
+  width: 50%;
   height: auto;
   border: solid black 2px;
   position: absolute;
@@ -699,6 +699,26 @@ by game2.js script and then it adds the .clicked class to the button */
   justify-content: center;
   padding: 1rem;
   gap: 1rem;
-  background-color: white;
+  background-color: #b83941;
+  color: white;
   border-radius: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.restart-button {
+  padding: 0.5rem;
+  align-content: center;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+  background-color: white;
+}
+
+.restart-button:hover {
+  color: white;
+  background-color: #020066;
 }
