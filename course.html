@@ -55,7 +55,7 @@
       <div>
       <h1 style="margin-top:10px; margin-bottom:0px">Lesson 2</h1>
       <h2 style="margin-top:0px; margin-bottom: 10px; color: #616161; font-size:1.3rem">Insurance scams</h2></div>
-      <a href="lesson-2-page-1.html" class="button-4">Start Lesson 2</a>
+      <button onclick: href="lesson-2-page-1.html" class="button-4" id="lesson-2-btn">Start Lesson 2</button>
     </div>
 
     
@@ -66,7 +66,7 @@
       <div>
       <h1 style="margin-top:10px; margin-bottom:0px">Game 2</h1>
       <h2 style="margin-top:0px; margin-bottom: 10px; color: #616161; font-size:1.3rem">Investment Tycoon</h2></div>
-      <a href="game-2.html" class="button-4"">Play Game 2</a>
+      <button  onclick: href="game-2.html" class="button-4" id="game-2-btn">Play Game 2</button>
     </div>
   
     
@@ -107,11 +107,28 @@
   if (!sessionStorage.getItem("game-2-completed")) {
     sessionStorage.setItem("game-2-completed", 0);
   }
+  if (!sessionStorage.getItem("game-1-visited")) {
+    sessionStorage.setItem("game-1-visited", 0)
+  }
+  if (sessionStorage.getItem("game-1-visited") == 0) {
+    document.getElementById("lesson-2-btn").classList.add("btn-disabled");
+    document.getElementById("game-2-btn").classList.add("btn-disabled");
+    document.getElementById("lesson-2-btn").disabled = true;
+    document.getElementById("game-2-btn").disabled = true;
+  }
+  else {
+    document.getElementById("lesson-2-btn").classList.remove("btn-disabled");
+    document.getElementById("game-2-btn").classList.remove("btn-disabled");
+    document.getElementById("lesson-2-btn").disabled = false;
+    document.getElementById("game-2-btn").disabled = false;
+  }
   if (sessionStorage.getItem("game-2-completed") == 0) {
     document.getElementById("lesson-3-btn").classList.add("btn-disabled");
     document.getElementById("game-3-btn").classList.add("btn-disabled");
     document.getElementById("lesson-3-btn").disabled = true;
+    document.getElementById("game-3-btn").disabled = true;
   }
+  console.log(sessionStorage.getItem("game-1-visited"))
   console.log(sessionStorage.getItem("game-2-completed")); 
 </script>
 </html>
