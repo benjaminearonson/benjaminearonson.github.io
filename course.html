@@ -74,7 +74,7 @@
       <div>
       <h1 style="margin-top:10px; margin-bottom:0px">Lesson 3</h1>
       <h2 style="margin-top:0px; margin-bottom: 10px; color: #616161; font-size:1.3rem">Shopping scams</h2></div>
-      <a href="lesson-1-page-1.html" class="button-4">Start Lesson 3</a>
+      <button onclick: href="lesson-3-page-1.html" class="button-4" id="lesson-3-btn" type="button">Start Lesson 3</a>
     </div>
 
    
@@ -85,7 +85,7 @@
       <div>
       <h1 style="margin-top:10px; margin-bottom:0px">Game 3</h1>
       <h2 style="margin-top:0px; margin-bottom: 10px; color: #616161; font-size:1.3rem">Shopping cart</h2></div>
-      <a href="game-3.html" class="button-4" id="lesson-3-btn" type="button">Play Game 3</a>
+      <button onclick: href="game-3.html" class="button-4" id="game-3-btn" type="button">Play Game 3</a>
     </div>
   </div>
 
@@ -105,10 +105,11 @@
   // set the storage item that checks whether they've completed
   // game 2 to "false"
   if (!sessionStorage.getItem("game-2-completed")) {
-    sessionStorage.setItem("game-2-completed", false);
+    sessionStorage.setItem("game-2-completed", 0);
   }
-  if (sessionStorage.getItem("game-2-completed")) {
+  if (sessionStorage.getItem("game-2-completed") == 0) {
     document.getElementById("lesson-3-btn").classList.add("btn-disabled");
+    document.getElementById("game-3-btn").classList.add("btn-disabled");
     document.getElementById("lesson-3-btn").disabled = true;
   }
   console.log(sessionStorage.getItem("game-2-completed")); 

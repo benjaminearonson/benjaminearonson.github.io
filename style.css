@@ -153,11 +153,16 @@ gap: 1rem;}
   white-space: nowrap;
 }
 
-.button-4 .btn-disabled {
-  
+.btn-disabled {
+  background-color: #a2a2a289;
+  border-color: #a2a2a289;
 }
-.button-4 .btn-disabled:hover {
-  
+
+.button-4.btn-disabled:hover {
+  background-color: #a2a2a289;
+  border-color: #a2a2a289;
+  color:black;
+  cursor: default;
 }
 
 .button-1:hover {
