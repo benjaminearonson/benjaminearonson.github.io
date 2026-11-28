@@ -684,6 +684,12 @@ by game2.js script and then it adds the .clicked class to the button */
   font-weight: 700;
 }
 
+.game-2-complete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .continue-button img {
   width: 40px;
   height: auto;
