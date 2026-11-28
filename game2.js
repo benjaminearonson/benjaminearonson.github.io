@@ -46,7 +46,13 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
                 red_flags_found++;
                 red_flag_span.textContent=red_flags_found;
                 if (red_flags_found==3) {
-                    window.location.href = "game-2-level-1-complete.html";
+                    if (document.title == "Game 2 Level 1" {
+                        window.location.href = "game-2-level-1-complete.html";
+                    }
+                    if (document.title == "Game 2 Level 3" {
+                        window.location.href = "game-2-level-3-complete.html";
+                    }
+                    
                 }
             }
         }
