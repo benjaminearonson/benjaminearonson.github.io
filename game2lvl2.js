@@ -33,3 +33,40 @@ image.addEventListener('click', () => {
     }
 });
 
+document.querySelectorAll('.hotspot').forEach((spot) => {
+    spot.addEventListener('click', () => {
+        if (sessionStorage.getItem('lives')>0) {
+            if (!spot.classList.contains("clicked") 
+                && spot.id !== "wrong-answer") {
+                spot.classList.add('clicked');
+                red_flags_found++;
+                red_flag_span.textContent=red_flags_found;
+                if (red_flags_found==3) {
+                    if (document.title == "Game 2 Level 1") {
+                        window.location.href = "game-2-level-1-complete.html";
+                    }
+                    else if (document.title == "Game 2 Level 3") {
+                        window.location.href = "game-2-level-3-complete.html";
+                    }
+                    else if (document.title == "Game 2 Level 4") {
+                        window.location.href = "game-2-level-4-complete.html";
+                    }
+                    
+                }
+            }
+            // if the area clicked has id "wrong-answer" we should highlight it 
+            // red and deduct a life. adding class 'wrong-clicked' triggers css
+            // to add a red border
+            else if (spot.id == "wrong-answer") {
+                spot.classList.add('wrong-clicked');
+                sessionStorage.setItem('lives', sessionStorage.getItem('lives')-1);
+                life_counter.textContent = String(sessionStorage.getItem('lives'));
+                if (sessionStorage.getItem('lives') == 0) {
+                showPopup();
+                }
+            }
+            
+        }
+        
+    });
+});
