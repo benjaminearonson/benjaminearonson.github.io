@@ -153,6 +153,13 @@ gap: 1rem;}
   white-space: nowrap;
 }
 
+.button-4 .btn-disabled {
+  
+}
+.button-4 .btn-disabled:hover {
+  
+}
+
 .button-1:hover {
   color: white;
   background-color: #020066;
