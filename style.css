@@ -560,6 +560,10 @@ img:fullscreen {
   border-radius: 12px;
 }
 
+.level-1 .hotspot.wrong-clicked {
+  border-color: #b83941;
+}
+
 .hotspot:hover {
   position: absolute;
   display: block;
