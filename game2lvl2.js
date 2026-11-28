@@ -8,6 +8,10 @@ red_flag_span.textContent = red_flags_found;
 console.log(life_counter);
 life_counter.textContent = String(sessionStorage.getItem('lives'));
 
+if (sessionStorage.getItem('lives')==0) {
+    showPopup();
+}
+
 
 // sets variable 'image' to the image onscreen in level 1
 const image = document.querySelector('.aronson img');

@@ -10,6 +10,10 @@ life_counter.textContent = sessionStorage.getItem('lives');
 // sets variable 'image' to the image onscreen in level 1
 const image = document.querySelector('.aronson img');
 
+if (sessionStorage.getItem('lives')==0) {
+    showPopup();
+}
+
 // .textContent in both blocks edits whats in the span that's assigned at the top 
 // of this file
 

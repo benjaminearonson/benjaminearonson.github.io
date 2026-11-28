@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game 2 Level 5</title>
+    
+  </head>
+
+<body>
+ 
+  <nav> 
+    <div class="logo">Mike&Co's Scam Prevention Course</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="course.html">Course</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </nav>
+
+  
+  </body>
+
+<div class="level-1">
+    <div class="aronson">
+        <img src="Merrill Email.png" alt="An ad for Ricigliano Investment">
+        <!-- Here I'll put incorrect answers so their boxes show up on hover -->
+        <button class="hotspot" id="wrong-answer" type="button" style="left:4%; 
+        top:5.5%; width:13%; height:8%;"></button>
+        <button class="hotspot" id="wrong-answer" type="button" style="left:6%; 
+        top:15%; width:68.5%; height:8.5%;"></button>
+        <button class="hotspot" id="wrong-answer" type="button" style="left:5.5%; 
+        top:22%; width:46%; height:13%;"></button>
+        <button class="hotspot" id="wrong-answer" type="button" style="left:52%; 
+        top:24%; width:25%; height:8%;"></button>
+        <button class="hotspot" id="wrong-answer" type="button" style="left:6%; 
+        top:40%; width:84%; height:12%;"></button>
+        <button class="hotspot" id="wrong-answer" type="button" style="left:6%; 
+        top:54%; width:84%; height:12%;"></button>
+        <button class="hotspot" id="wrong-answer" type="button" style="left:6%; 
+        top:68%; width:84%; height:12%;"></button>
+        <button class="hotspot" id="wrong-answer" type="button" style="left:6%; 
+        top:82%; width:84%; height:12%;"></button>
+        
+        <!-- here I'll put a popup with a class that makes it
+          invisible until a function gets triggered in game2.js
+          at which point a class will be added that makes it visible-->
+          <div class="popup">
+            <div class="hide" id="myPopup">
+              You've run out of lives!
+              <a href="game-2.html" class="restart-button">Start over</a>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="invest-button-and-flag-counter">
+    <div></div>
+    <button class="invest-button" id="invest-button" onclick="window.location.href='level-5-complete.html'"><b>Invest!</b></button>
+    <div class="red-flag-text">Red flags found: <span id="red-flag-counter">0</span></div>
+    <div class="red-flag-text">Lives: <span id="life_counter">a</span></div>
+    <div></div>
+</div>
+
+<script src="game2lvl2.js"></script>
+</html>
