@@ -100,4 +100,10 @@
   <div></div>
 
 </footer>
+<script>
+  if (!sessionStorage.getItem("game-2-completed")) {
+    sessionStorage.setItem("game-2-completed", false)
+  }
+  console.log(sessionStorage.getItem("game-2-completed")); 
+</script>
 </html>
