@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game 2 Level 4</title>
+    
+  </head>
+
+<body>
+ 
+  <nav> 
+    <div class="logo">Mike&Co's Scam Prevention Course</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="course.html">Course</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </nav>
+
+  
+  </body>
+
+<div class="level-1">
+    <div class="aronson">
+        <!-- using HTML Map - each button sits x% right of the left ledge of the div-->
+        <!-- and y% down from the top edge of the div using left:x%; right:y% -->
+        <!-- and the width and height are as expected using percentages of div width and height -->
+        <img src="AI crypto sm ad.png" alt="An ad for Aronson Capital">
+        <button class="hotspot" type="button" style="left:52.6%; 
+        top:12.2%; width:38.9%; height:28.2%;"></button>
+        <button class="hotspot" type="button" style="left:7.16%;
+        top:35.6%; width:38%; height:10.5%;"></button>
+        <button class="hotspot" type="button" style="left:5.6%;
+        top:79.4%; width:41.9%; height:7%;"></button>
+        
+          <!-- here I'll put a popup with a class that makes it
+          invisible until a function gets triggered in game2.js
+          at which point a class will be added that makes it visible-->
+          <div class="popup">
+            <div class="hide" id="myPopup">
+              You've run out of lives!
+              <a href="game-2.html" class="restart-button">Start over</a>
+            </div>
+          </div>
+    </div>
+    
+</div>
+
+<div class="invest-button-and-flag-counter">
+    <div></div>
+    <!-- this is how we communicate with game2.js -- each span is given an id that is accessed
+     by the js file. anything in the span can be edited using .textContent in js -->
+    <button class="invest-button" id="invest-button" onclick="window.location.href='level-3-invest.html'"><b>Invest!</b></button>
+    <div class="red-flag-text">Red flags found: <span id="red-flag-counter">3</span></div>
+    <div class="red-flag-text">Lives: <span id="life_counter"></span></div>
+    <div></div>
+</div>
+
+
+
+<script src="game2.js"></script>
+</html>

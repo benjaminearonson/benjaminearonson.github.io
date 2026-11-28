@@ -558,7 +558,14 @@ img:fullscreen {
   background: transparent;
   border: 4px solid transparent;
   border-radius: 12px;
-  
+}
+
+.hotspot:hover {
+  position: absolute;
+  display: block;
+  background: transparent;
+  border: 4px solid #66d7397b;
+  border-radius: 12px;
 }
 
 /* this is what makes the clickable areas work */

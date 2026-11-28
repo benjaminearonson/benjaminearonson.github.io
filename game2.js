@@ -52,6 +52,9 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
                     else if (document.title == "Game 2 Level 3") {
                         window.location.href = "game-2-level-3-complete.html";
                     }
+                    else if (document.title == "Game 2 Level 4") {
+                        window.location.href = "game-2-level-4-complete.html";
+                    }
                     
                 }
             }
