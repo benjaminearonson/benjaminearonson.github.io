@@ -41,7 +41,8 @@ image.addEventListener('click', () => {
 document.querySelectorAll('.hotspot').forEach((spot) => {
     spot.addEventListener('click', () => {
         if (sessionStorage.getItem('lives')>0) {
-            if (!spot.classList.contains("clicked")) {
+            if (!spot.classList.contains("clicked") 
+                && !spot.classList.contains("incorrect")) {
                 spot.classList.add('clicked');
                 red_flags_found++;
                 red_flag_span.textContent=red_flags_found;
@@ -58,6 +59,11 @@ document.querySelectorAll('.hotspot').forEach((spot) => {
                     
                 }
             }
+            
+        }
+        else if (spot.classList.contains("incorrect")) {
+            spot.classList.add('wrong-clicked');
+            sessionStorage.setItem('lives', sessionStorage.getItem('lives')-1);
         }
     });
 });
