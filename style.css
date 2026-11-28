@@ -181,6 +181,7 @@ gap: 1rem;}
 .button-4:hover {
   color: white;
   background-color: #020066;
+  cursor: pointer;
 }
 
 .options {
